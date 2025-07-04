@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Portfolio</title>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">Portfolio</a>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Hello, This is Likhitha</h1>
+                <p class="tagline">Web Developer, Data Scientist</p>
+                <p class="description">
+                    Passionate about creating innovative digital solutions with modern technologies. 
+                    Specializing in web development, data science, and user experience design.
+                </p>
+                <a href="#contact" class="cta-button">Contact Me</a>
+            </div>
+            <div class="hero-image">
+                <div class="profile-image">
+                    <img src="https://via.placeholder.com/150" alt="Profile Image" style="border-radius: 50%;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects">
+        <h2 class="section-title">My Projects</h2>
+        <p class="section-subtitle">Some amazing projects that I have worked upon</p>
+        
+        <div class="projects-container">
+            <div class="project-card">
+                <div class="project-image">🛒</div>
+                <div class="project-info">
+                    <h3 class="card-title">E-commerce Website</h3>
+                    <button class="visit-btn" onclick="visitProject(this)">Visit→</button>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">📊</div>
+                <div class="project-info">
+                    <h3 class="card-title">Food Delivery Data Analysis</h3>
+                    <button class="visit-btn" onclick="visitProject(this)">Visit→</button>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">☢️</div>
+                <div class="project-info">
+                    <h3 class="card-title">Chernobyl Prevention Model</h3>
+                    <button class="visit-btn" onclick="visitProject(this)">Visit→</button>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">🌐</div>
+                <div class="project-info">
+                    <h3 class="card-title">Social Networking UI</h3>
+                    <button class="visit-btn" onclick="visitProject(this)">Visit→</button>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">📱</div>
+                <div class="project-info">
+                    <h3 class="card-title">Mobile App Dashboard</h3>
+                    <button class="visit-btn" onclick="visitProject(this)">Visit→</button>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">🤖</div>
+                <div class="project-info">
+                    <h3 class="card-title">AI Chatbot Interface</h3>
+                    <button class="visit-btn" onclick="visitProject(this)">Visit→</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills">
+        <h2 class="section-title">My Skills</h2>
+        
+        <div class="skills-grid">
+            <div class="skill-card">
+                <div class="skill-icon">💻</div>
+                <h3 class="skill-title">Web Development</h3>
+                <p class="skill-description">Full-stack development with modern frameworks and technologies. Expertise in creating responsive, scalable web applications.</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon">📊</div>
+                <h3 class="skill-title">Data Analysis</h3>
+                <p class="skill-description">Advanced data visualization and statistical analysis using Python, R, and modern analytics tools for business insights.</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon">🎨</div>
+                <h3 class="skill-title">UI/UX Design</h3>
+                <p class="skill-description">Creating intuitive and visually appealing user interfaces with focus on user experience and accessibility.</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon">🔧</div>
+                <h3 class="skill-title">DevOps</h3>
+                <p class="skill-description">Continuous integration and deployment, cloud infrastructure management, and automated testing workflows.</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon">🤖</div>
+                <h3 class="skill-title">Machine Learning</h3>
+                <p class="skill-description">Predictive modeling and AI solutions development with focus on practical applications and business value.</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon">🚀</div>
+                <h3 class="skill-title">Project Management</h3>
+                <p class="skill-description">Agile methodology implementation, team leadership, and successful delivery of complex technical projects.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <h2 class="section-title">Contact Me</h2>
+        <p class="section-subtitle">Let's work together</p>
+        
+        <form class="contact-form">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="appointment">Preferred Date</label>
+                <input type="date" id="appointment" name="appointment">
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Tell me about your project..."></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+    </section>
+
+    <script>
+        function visitProject(button) {
+            button.style.backgroundColor = '#2e7d32';
+            button.style.color = 'white';
+            button.style.borderColor = '#2e7d32';
+            button.textContent = 'Visited';
+            button.classList.add('visited');
+        }
+    </script>
+</body>
+</html>
